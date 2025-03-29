@@ -137,6 +137,10 @@ article .language-description{
        width: 100%
         
     }
+
+    .header h1{
+        font-size: 17px;
+    }
     
 }
 
