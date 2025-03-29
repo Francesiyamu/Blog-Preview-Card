@@ -12,36 +12,41 @@ body, html{
 
 body{
     background-color: hsl(47, 88%, 63%);
-    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    line-height: 1rem;
 }
 
 .container{
-    max-width: 384px;
-    max-height: 522px;
+    /*max-width: 384px;
+    max-height: 522px;*/
     border: 1px solid black;
-    padding: 24px 24px;
+    padding: 24px;
     border-radius: 20px;
     box-sizing: border-box;
     background-color: #ffff;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    box-shadow: 10px 10px 20px rgba(12, 0, 0, 0.989); /* Right and bottom shadow */
 }
 
 
 .illustration-image{
     width: 100%;
-    width: 336px;
+    /*max-width: 336px;*/
     height: 200px;
+    margin-bottom: 10px;
 }
 
 .illustration-image img{
-    border-radius: 20px;
+    border-radius: 15px;
     width: 100%;
     height: 100%;
     display: block;
@@ -49,13 +54,9 @@ body{
 }
 
 .header{
-    width: 336px;
-    height: 194px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    width: 100%;
+    height: auto;
+    padding: 24px;
 }
 
 .header button{
@@ -73,6 +74,7 @@ header button:hover,
 .header button:focus {
     background-color: hsl(47, 88%, 53%);
     outline: none;
+    transition: background-color 0.3s ease;
 }
 
 .header time{
@@ -93,9 +95,10 @@ header button:hover,
 
 .author-image{
     display: flex;
-    justify-content:flex-start;
+    align-self: flex-start;
     align-items: center;
     gap: 10px;
+    padding: 0 24px;
 }
 
 article .language-description{
@@ -106,7 +109,7 @@ article .language-description{
 
 .author-image figcaption{
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 800; /*made the name bolder*/
     color: hsl(0, 0%, 7%);
 }
 
@@ -119,23 +122,32 @@ article .language-description{
 /* Media query for screens ≥ 375px */
 @media screen and (min-width: 375px){
     .container{
-        max-width: 327px;
+        max-width: 300px;
         padding:13px ;
         
     }
 
     .illustration-image{
         width: 100%;
-        width: 279px;
+        max-width: 279px;
         height: 200px;
     }
 
     .header{
-        width: 279px;
-        height: 173px;
-        margin-top: 40px;
-        margin-bottom: 20px;
+       width: 100%
         
     }
     
 }
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 600px; /* Wider container for desktop */
+    }
+    .illustration-image {
+        max-width: 500px;
+        height: 300px;
+    }
+}
+
