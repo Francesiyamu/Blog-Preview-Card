@@ -62,5 +62,5 @@ I practiced creating responsive layouts using media queries to ensure the design
 
 ## Acknowledgments
 
-I would like to thank Mr. Kelvin for taking the time to review my projects and providing honest feedback on areas where I can improve.
+I would like to thank [Kelvin-Ben](https://github.com/Kelvin-Ben) for taking the time to review my projects and providing honest feedback on areas where I can improve.
 
